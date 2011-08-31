@@ -807,12 +807,11 @@ orientation: "top",
         
 constrained: false,
         levelsToShow: 20,
+alignment: top,
         onBeforeCompute: function(node){
-            Log.write("loading " + node.name);
         },
         
         onAfterCompute: function(){
-            Log.write("done");
         },
         
         //This method is called on DOM label creation.
@@ -894,4 +893,3 @@ constrained: false,
     //end
 
 }
-init();

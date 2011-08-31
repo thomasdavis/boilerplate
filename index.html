@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	<script data-main="js/main" src="js/require-jquery.js"></script>
+	
 </head>
 <body>
 
@@ -24,19 +26,69 @@
 
 	</header>
 	<div id="main" role="main">
+a			<div id="center-container"> 
+		    <div id="infovis"></div>dfdf    
+			<table> 
+			    <tr> 
+			        <td> 
+			            <label for="r-left">Left </label> 
+			        </td> 
+			        <td> 
+			            <input type="radio" id="r-left" name="orientation" checked="checked" value="left" /> 
+			        </td> 
+			    </tr> 
+			    <tr> 
+			         <td> 
+			            <label for="r-top">Top </label> 
+			         </td> 
+			         <td> 
+			            <input type="radio" id="r-top" name="orientation" value="top" /> 
+			         </td> 
+			    </tr> 
+			    <tr> 
+			         <td> 
+			            <label for="r-bottom">Bottom </label> 
+			          </td> 
+			          <td> 
+			            <input type="radio" id="r-bottom" name="orientation" value="bottom" /> 
+			          </td> 
+			    </tr> 
+			    <tr> 
+			          <td> 
+			            <label for="r-right">Right </label> 
+			          </td> 
+			          <td> 
+			           <input type="radio" id="r-right" name="orientation" value="right" /> 
+			          </td> 
+			    </tr> 
+			</table> 
 
+			<h4>Selection Mode</h4> 
+			<table> 
+			    <tr> 
+			        <td> 
+			            <label for="s-normal">Normal </label> 
+			        </td> 
+			        <td> 
+			            <input type="radio" id="s-normal" name="selection" checked="checked" value="normal" /> 
+			        </td> 
+			    </tr> 
+			    <tr> 
+			         <td> 
+			            <label for="s-root">Set as Root </label> 
+			         </td> 
+			         <td> 
+			            <input type="radio" id="s-root" name="selection" value="root" /> 
+			         </td> 
+			    </tr> 
+			</table>
+		</div>
 	</div>
 	<footer>
-
+<div id="log"></div>
 	</footer>
 </div> <!--! end of #container -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-<!-- scripts concatenated and minified via ant build script-->
-<script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
 <!-- end scripts-->
 
 </body>

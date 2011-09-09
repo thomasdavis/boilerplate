@@ -14,30 +14,55 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<link rel="stylesheet" href="css/style.css">
-
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 	<script data-main="js/main" src="js/require-jquery.js"></script>
+
+
 	
 </head>
 <body>
 
 <div id="container">
 	<header>
-		<h1 id="logo">The Widget Playground</h1>
-		<ul id="menu">
-			<li><a href="#">Site Area Map</a></li>
-			<li><a href="#">Menu Item 1</a></li>
+		
+		<div id="accountmenu">
+			<div class="siteSelector">Site: Ephox</div>
+			<div class="accountSettings">Account</div>
+		</div>
+		<div id="menubar">
+			<ul id="menu">
+				<li><a href="#" class="selected">Home</a></li>
+				<li><a href="#">Stats</a></li>
 			
-			<li><a href="#">Menu Item 1</a></li>
-			<li><a href="#">Menu Item 1</a></li>
-			<li><a href="#">Menu Item 1</a></li>
+				<li><a href="#">Tasks</a></li>
+				<li><a href="#">Reports</a></li>
+				<li><a href="#">Accounts</a></li>
 			
 			
-		</ul>
+			</ul>
+			<div style="clear:both;">
+		</div>
 	</header>
 	<div id="main" role="main">
-
-		    <div id="infovis"></div>    
+		<div style="clear:both;">
+		<div class="dashboard-overview panel">
+			<div class="column categories">
+				<ul>
+					<li><a href="#/view/overview">Overview</a></li>
+					<li><a href="#/view/spellchecking">Spell Checking</a></li>
+					<li><a href="#/view/linkchecking">Link Checking</a></li>
+					<li><a href="#/view/accessibility">Accessibility</a></li>
+				</ul>
+			</div>
+			<div class="column summary">
+				<div class="">
+					
+				</div>
+			</div>
+			<div class="column">First</div>
+		</div>
+		
+		   <!-- <div id="infovis"></div>   --> 
 
 	</div>
 	<footer>
@@ -47,5 +72,8 @@
 
 <!-- end scripts-->
 
+
+
 </body>
+
 </html>

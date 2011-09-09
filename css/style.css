@@ -200,51 +200,77 @@ table { border-collapse: collapse; border-spacing: 0; }
    Primary styles
    Author: 
    ========================================================================== */
+
 body {
-	background: #e7e7e7;
+	background: #252e35;
+	font-family: "Helvetica";
 }
 #container {
 	width: 960px;
 	margin: auto;
-	background: #ccc;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+	
+}
 
-	border-bottom: 1px solid #ccc;
-}
-header {
-	height: 100px;
-	background: #2E3233;
-}
 #logo {
 	margin: 0;
 	color: #CAF200;
 	padding: 10px;
 }
+#accountmenu {
+	height: 40px;
+	color: #fff;
+	margin: 0;
+	padding:0;
+}
+#accountmenu .siteSelector {
+	float: left;
+	background: #434d52;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 4px;
+}
+#accountmenu .accountSettings {
+	float: right;
+	padding: 4px;
+	background: #434d52;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#menubar {
+	margin: 0;
+	padding: 0;
+	height: 80px;
+	background: #1a1f23;
+}
 #menu {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 #menu li {
 	float: left;
+	line-height: 80px;
 }
 #menu a {
-	color: #CAF200;
+	color: #fff;
 	margin-left: 20px;
 	padding: 10px;
-	border: 1px solid #E2E3DF;
+	text-decoration: none;
+	font-size: 1.6em;
+}
+#menu a.selected {
 	
-	background-color: #515B5E;
+	background: #434d52;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 }
 #menu a:hover{
 	color: #E2E3DF;
 }
 #main {
-		min-height: 400px;
-		background: #FFFEFC;
 }
 footer {
 	padding: 5px;
-	background: #2E3233;
 	color: #E2E3DF;
 	text-align: right;
 }
@@ -256,6 +282,78 @@ footer {
     margin:auto;
     overflow:hidden;
 }
+
+
+
+/* DASHBOARD */
+.panel {
+	height: 300px;
+	
+}
+.panel .column {
+	width: 33%;
+	float: left;
+	color: #fff;
+	
+	height: 100%;
+}
+.panel .categories {
+	width: 250px;
+	border-right: 1px solid #434d52;
+}
+.panel .categories ul{
+	list-style: none;
+	padding: 0;
+	margin: 0	;
+}
+
+
+.panel .categories li a {
+	color: #fff;
+	font-size: 16px;
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+}
+.panel .categories li a.selected {
+	background: #434d52;
+}
+.panel .categories li a:hover{
+	background: #434d52;
+}
+
+.panel .summary {
+	width: 250px;
+	border-right: 1px solid #434d52;
+}
+
+.panel .summary {
+	width: 250px;
+	border-right: 1px solid #434d52;
+}
+.panel .summary ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.panel .summary li a {
+	color: #fff;
+	font-size: 12px;
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+}
+.panel .summary li a.selected {
+	background: #434d52;
+}
+.panel .summary li a:hover{
+	background: #434d52;
+}
+
+
+
 
 /*TOOLTIPS*/
 .tip {

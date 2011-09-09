@@ -1,6 +1,15 @@
-require(["jquery", "jit-yc", "plugins"], function($) {
-    //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
-    $(function() {
-        init();
-    });
-});
+require(
+    [
+        "require",
+        "order!backbone",
+		"text!home.tpl"
+
+
+    ], 
+    function (require, Backbone, templates ) {
+		$("body").append(templates);
+        require(["app"], function (app) {
+            var appview = new AppView();
+        });
+    }
+);

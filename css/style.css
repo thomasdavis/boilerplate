@@ -204,11 +204,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 body {
 	background: #252e35;
 	font-family: "Helvetica";
+
 }
 #container {
 	width: 960px;
 	margin: auto;
-	
+	border-left: 1px solid #434d52;
+	border-right: 1px solid #434d52;
+	border-bottom: 1px solid #434d52;
 }
 
 #logo {
@@ -219,6 +222,7 @@ body {
 #accountmenu {
 	height: 40px;
 	color: #fff;
+	background: #434d52;
 	margin: 0;
 	padding:0;
 }
@@ -241,6 +245,9 @@ body {
 	padding: 0;
 	height: 80px;
 	background: #1a1f23;
+	
+	border-top: 1px solid #434d52;
+	border-bottom: 1px solid #434d52;
 }
 #menu {
 	list-style: none;
@@ -256,7 +263,7 @@ body {
 	margin-left: 20px;
 	padding: 10px;
 	text-decoration: none;
-	font-size: 1.6em;
+	font-size: 18px;
 }
 #menu a.selected {
 	
@@ -265,7 +272,9 @@ body {
 	-webkit-border-radius: 3px;
 }
 #menu a:hover{
-	color: #E2E3DF;
+	background: #434d52;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 }
 #main {
 }
@@ -288,7 +297,9 @@ footer {
 /* DASHBOARD */
 .panel {
 	height: 300px;
-	
+	display: block;
+	border-top: 1px solid #434d52;
+	border-bottom: 1px solid #434d52;
 }
 .panel .column {
 	width: 33%;
@@ -310,7 +321,7 @@ footer {
 
 .panel .categories li a {
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	padding: 10px;
 	display: block;
 	text-decoration: none;

@@ -1,3 +1,3 @@
-define(["order!underscore", "order!http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.3/backbone-min.js"], function(_, Backbone1){
-	return Backbone;
+define(["cdn-backbone"], function(b){
+	return {};
 });

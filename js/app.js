@@ -17,6 +17,7 @@ var AppView = Backbone.View.extend({
 	something: function(panelName){
 		$(".categories a").removeClass("selected")
 		$('a[href="#/view/' + panelName + '"]').addClass("selected")
+		console.log(panelName)
 		$(".summary", this.el).html( _.template( $( "#" + panelName + "_summary_template").html(), {} ) );
 	}
 
